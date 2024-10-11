@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif; /* Chọn font chữ cho trang */
+    display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 100vh; /* Chiều cao toàn bộ trang */
+    background-color: #f0f0f0; /* Màu nền trang */
+}
+
+.container {
+    text-align: center; /* Căn giữa văn bản trong khối chứa */
+}
+
+#puzzle-container {
+    display: grid; /* Sử dụng lưới để sắp xếp các mảnh ghép */
+    grid-template-columns: repeat(4, 100px); /* Chia thành 4 cột, mỗi cột rộng 100px */
+    grid-gap: 5px; /* Khoảng cách giữa các mảnh ghép */
+    margin: 20px auto; /* Tạo khoảng cách trên và dưới, căn giữa lưới */
+}
+
+.puzzle-piece {
+    width: 100px; /* Chiều rộng của mỗi mảnh ghép */
+    height: 100px; /* Chiều cao của mỗi mảnh ghép */
+    background-color: #4CAF50; /* Màu nền của mảnh ghép */
+    display: flex; /* Sử dụng Flexbox để căn giữa nội dung trong mảnh ghép */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    color: white; /* Màu chữ của mảnh ghép */
+    font-size: 24px; /* Kích thước chữ */
+    cursor: pointer; /* Thay đổi con trỏ khi di chuột qua mảnh ghép */
+}
